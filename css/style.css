@@ -6,7 +6,13 @@ html, body {
 
 body {
     font-family: 'Builder Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    background-color: #232527;
+    background-image:
+        radial-gradient(circle at center, rgba(0,0,0,.5) 60%, rgba(0,0,0,.75) 100%),
+        url("https://images.rbxcdn.com/a19e4c27a0694a1d0fd5ceb17c978a7a-marketing_bg_05222025.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +33,7 @@ body {
 
 .login-container {
     position: relative; 
-    background-color: #393b3d;
+    background-color: #272930;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px; 
     width: 90%;
@@ -52,12 +58,17 @@ body {
 .input-field input {
     width: 100%;
     padding: 12px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid hsla(0, 0%, 100%, 0.2);
-    color: #bdbebe;
+    background-color: #343740;
+    border: 1px solid rgba(208,217,251,.12);
+    color: #d5d7dd;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 16px;
+}
+
+.input-field input::placeholder {
+    color: #d5d7dd;
+    opacity: 1;
 }
 
 .input-field input:focus {
@@ -65,7 +76,7 @@ body {
     outline: none;
 }
 
-.login-button, .secondary-button {
+.login-button {
     background-color: transparent;
     border: 1px solid #bdbebe;
     color: hsla(0, 0%, 100%, 0.7);
@@ -78,23 +89,43 @@ body {
     font-weight: 600;
 }
 
-.login-button:hover, .secondary-button:hover {
+.login-button:hover {
     background-color: transparent;
     color: #ffffff;
     border-color: #ffffff;
 }
 
+.secondary-button {
+    background-color: #3b3e49;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    margin: 4px 0 10px;
+    font-weight: 600;
+}
+
+.secondary-button:hover {
+    background-color: #3b3e49;
+    color: #ffffff;
+    border: none;
+}
+
 .separator {
     margin: 15px 0;
     height: 1px;
-    background-color: #85858596;
+    background-color: #3b3e49;
     width: 100%;
 }
 
 .footer-container {
     width: 100%;
     margin-top: auto;
-    padding: 10px 0;
+    padding: 20px 0;
+    background-color: #121215;
 }
 
 .footer-links {
@@ -118,7 +149,7 @@ body {
 .footer-stripe {
     width: 60%;
     height: 1px;
-    background-color: #85858596;
+    background-color: #3b3e49;
     margin: 10px auto;
 }
 
@@ -279,7 +310,7 @@ body {
     width: 400px;
     padding: 7px 30px 7px 40px;
     border: 1px solid #333;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #212227;
     color: white;
     border-radius: 10px;
     font-size: 16px;
@@ -288,6 +319,11 @@ body {
 .search-container input[type="text"]:focus {
     border-color: #bdbebe;
     outline: none;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #d5d7dd;
+    opacity: 1;
 }
 
 .search-container img.search-icon {
@@ -323,7 +359,7 @@ body {
 #dropdown {
     display: none; 
     position: absolute;
-    background-color: #232527;
+    background-color: #121215;
     z-index: 1;
     width: 100%;
     border: none;
@@ -336,7 +372,7 @@ body {
     padding: 20px;
     color: #b0b0b0;
     cursor: pointer;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #2a2a2d;
     display: flex; 
     align-items: center;
     overflow: hidden;
@@ -367,7 +403,7 @@ body {
 }
 
 .signup-button {
-    background-color: #00b06f;
+    background-color: #335fff;
     color: white;
     padding: 5px 10px;
     text-decoration: none;
