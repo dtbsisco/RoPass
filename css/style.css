@@ -217,7 +217,7 @@ body {
 }
 
 .navbar {
-    background-color: #191b1d;
+    background-color: #191a1f;
     display: flex;
     align-items: center;
     padding: 5px 2%;
@@ -309,7 +309,7 @@ body {
 .search-container input[type="text"] {
     width: 400px;
     padding: 7px 30px 7px 40px;
-    border: 1px solid #333;
+    border: 1px solid  rgba(208,217,251,.12);
     background-color: #212227;
     color: white;
     border-radius: 10px;
